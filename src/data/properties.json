@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "title": "Furnished Office Space",
+    "city": "Hyderabad",
+    "location": "Hitec City",
+    "locality": "Near Cyber Towers",
+    "price": "Rs 130/sq ft",
+    "type": "furnished",
+    "workstations": 100,
+    "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80"
+  },
+  {
+    "id": "2",
+    "title": "Furnished Office Space",
+    "city": "Hyderabad",
+    "location": "Gachibowli",
+    "locality": "Near Wipro Circle",
+    "price": "Rs 75/sq ft",
+    "type": "furnished",
+    "workstations": 50,
+    "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80"
+  },
+  {
+    "id": "3",
+    "title": "Managed Office Space",
+    "city": "Hyderabad",
+    "location": "ORR",
+    "locality": "Near Aparna Cyberzon",
+    "price": "Rs 95/sq ft",
+    "type": "managed",
+    "workstations": 80,
+    "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
+  },
+  {
+    "id": "4",
+    "title": "Furnished Office Space",
+    "city": "Hyderabad",
+    "location": "Madhapur",
+    "locality": "Near Image Gardens",
+    "price": "Rs 110/sq ft",
+    "type": "furnished",
+    "workstations": 60,
+    "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80"
+  },
+  {
+    "id": "5",
+    "title": "Managed Office Space",
+    "city": "Hyderabad",
+    "location": "Kondapur",
+    "locality": "Near Botanical Garden",
+    "price": "Rs 85/sq ft",
+    "type": "managed",
+    "workstations": 40,
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80"
+  }
+]
