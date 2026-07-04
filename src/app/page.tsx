@@ -12,7 +12,7 @@ type Property = {
   price: string;
   type: string;
   workstations: number;
-  image: string;
+  image?: string;
 };
 
 const properties: Property[] = propertiesData;
@@ -81,12 +81,32 @@ export default function Home() {
                 key={property.id}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow"
               >
-                <img
-                  src={property.image}
-                  alt={property.title}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-4">
+                {property.image ? (
+              <img
+                src={property.image}
+                alt={property.title}
+                className="w-full h-48 object-cover"
+              />
+            ) : (
+              <div className="w-full h-48 bg-gray-100 flex flex-col items-center justify-center gap-2">
+                <svg
+                  viewBox="0 0 24 24"
+                  className="w-12 h-12 text-gray-400"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 21V7a1 1 0 011-1h6a1 1 0 011 1v14M4 21h16M12 21V3.5a1 1 0 011-1h5a1 1 0 011 1V21M8 10h.01M8 14h.01M9 21v-3h2v3"
+                  />
+                </svg>
+                <span className="text-xs font-medium text-gray-400 uppercase tracking-wide">
+                  {property.type ? `${property.type} office` : 'Coming Soon'}
+                </span>
+              </div>
+            )}                <div className="p-4">
                   <h3 className="text-lg font-semibold text-[#003366]">{property.title}</h3>
                   <p className="text-sm text-gray-500 mt-1">
                     {property.location}, {property.city}
